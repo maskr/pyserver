@@ -39,7 +39,6 @@ def rsp(conn):
 			conn.send(enviar)
 	conn.close()
 def Main():
-	#BUFFER = 1024
 	srvr = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 	srvr.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 	srvr.bind((DIRECCION, PUERTO))
